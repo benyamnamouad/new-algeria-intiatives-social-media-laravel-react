@@ -5,9 +5,22 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Initiative;
+use Illuminate\Support\Facades\DB;
 
 class InitiativeController extends Controller
 {
+    /**
+     *Return the number of Initiatives
+     *
+     */
+
+    public function count(){
+        $countInits = DB::table('initiatives')->count();
+        return response()->json($countInits);
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *

@@ -1,0 +1,15 @@
+/*my custom style*/
+
+.navbar{
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(66, 66, 66, 0.27);
+}
+
+.Footer{
+    margin-top: 100px !important;
+}
+
+.jumbotron{
+    margin-top: 70px;
+}
+

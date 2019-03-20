@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/inits','Api\InitiativeController');
+Route::get('/initsCount','Api\InitiativeController@count');
 
 Auth::routes();
 
